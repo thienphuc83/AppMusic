@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent6">
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/relativechudetheloai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvTitleChudetheloai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHỦ ĐỀ VÀ THỂ LOẠI"
+            android:fontFamily="serif"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/tvXemthemChudetheloai"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xem thêm>"
+            android:background="@drawable/custom_click_xemthem"
+            android:fontFamily="serif"
+            android:textSize="12sp"
+            android:layout_margin="5dp"
+            android:textColor="@color/colorPrimary"/>
+
+    </RelativeLayout>
+    <HorizontalScrollView
+        android:id="@+id/HorizontalScrollView"
+        android:scrollbars="none"
+        android:layout_below="@id/relativechudetheloai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </HorizontalScrollView>
+</RelativeLayout>

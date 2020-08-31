@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/colorAccent6">
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tvnhipdieu"
+        android:text="NHỊP ĐIỆU CẢM XÚC"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tvnote"
+        android:layout_below="@+id/tvnhipdieu"
+        android:layout_marginTop="5dp"
+        android:text="Đắm chìm trong những cung bậc âm nhạc của tình yêu"
+        android:textSize="12sp"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="serif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ListView
+        android:layout_below="@+id/tvnote"
+        android:id="@+id/lvplaylist"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:id="@+id/tvxemthemplaylist"
+        android:layout_below="@+id/lvplaylist"
+        android:padding="2dp"
+        android:gravity="center"
+        android:background="@drawable/custom_click"
+        android:layout_marginTop="5dp"
+        android:text="Xem thêm playlist..."
+        android:textSize="12sp"
+        android:textColor="@color/colorAccent6"
+        android:fontFamily="serif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

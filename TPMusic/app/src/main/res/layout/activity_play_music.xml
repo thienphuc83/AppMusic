@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.PlayMusicActivity">
+    <ImageView
+        android:id="@+id/imganhnenplaynhac"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarPlaymusic"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Light"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10">
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewpagerplaymusic"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8"></androidx.viewpager.widget.ViewPager>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:id="@+id/tvphuthientai"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="00:00"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15dp" />
+
+                    <SeekBar
+                        android:id="@+id/seekbarplay"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:progressBackgroundTint="@color/colorAccent6"
+                        android:progressTint="@color/colorPrimary"
+                        android:thumbTint="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/tvphuttong"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="00:00"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="13">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:gravity="center">
+
+                        <ImageButton
+                            android:id="@+id/imgramdom"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:background="@null"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/random" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/imgrewind"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/custom_click_bg_button_play"
+                            android:padding="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/rewind" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/imgplay"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/custom_click_bg_button_play"
+                            android:padding="15dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/play" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/imgnext"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/custom_click_bg_button_play"
+                            android:padding="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/next" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:gravity="center">
+
+                        <ImageButton
+                            android:id="@+id/imgreplay"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:background="@null"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/replay" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
