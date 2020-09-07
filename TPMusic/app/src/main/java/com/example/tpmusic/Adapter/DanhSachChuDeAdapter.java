@@ -40,7 +40,7 @@ public class DanhSachChuDeAdapter extends RecyclerView.Adapter<DanhSachChuDeAdap
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         ChuDe chuDe = chuDeArrayList.get(position);
         Picasso.with(context).load(chuDe.getHinhChuDe()).into(holder.imgDanhSachChuDe);
-
+//hkhkh
     }
 
     @Override
